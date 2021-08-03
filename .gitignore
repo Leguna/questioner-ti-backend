@@ -1,3 +1,6 @@
 node_modules
 notes-api-webserver.pem
 .idea
+.env
+.gitignore
+.eslintrc.json
