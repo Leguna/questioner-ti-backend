@@ -10,7 +10,6 @@ const client = new Pool({
   max: 18,
   connectionTimeoutMilllis: 5000,
   idleTimeoutMillis: 10000
-
 })
 
 const testConnection = async () => {
