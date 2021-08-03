@@ -6,8 +6,8 @@ const { validate } = require('./database')
 
 const init = async () => {
   const server = Hapi.server({
-    port: 8080,
-    host: process.env.NODE_ENV !== 'production' ? 'localhost' : 'questioner-ti.herokuapp.com',
+    port: process.env.PORT || 5000,
+    host: process.env.NODE_ENV !== 'production' ? 'localhost' : '0.0.0.0',
     routes: {
       cors: true,
       payload: { multipart: true }
